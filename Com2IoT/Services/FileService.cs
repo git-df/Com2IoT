@@ -21,6 +21,8 @@ namespace Com2IoT.Services
 
         public void WriteFIle(string data)
         {
+            UpdateFileUrl();
+
             if (!Directory.Exists(@".\logs"))
             {
                 Directory.CreateDirectory(@".\logs");
